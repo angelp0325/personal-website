@@ -4,15 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
-    <title>Document</title>
+    <title>About - Angel Polanco</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/index.html"></a>Home</li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-    <h1>About</h1>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <a class="brand" href="/index.html">Angel Polanco</a>
+        <ul class="nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html" aria-current="page">About</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="about">
+        <header>
+          <h1>About Me</h1>
+        </header>
+        <p>
+          When I'm not focused on building responsive and accessible websites,
+          you can probably find me doing the following.
+        </p>
+        <section>
+          <h2>Interests</h2>
+          <ul>
+            <li>Evangelism</li>
+            <li>Dominoes</li>
+            <li>Basketball</li>
+            <li>Gym</li>
+            <li>Piano</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer"></footer>
+
+    <script src="/home.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
