@@ -4,9 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
-    <title>Document</title>
+    <title>Home - Angel Polanco</title>
   </head>
   <body>
-    <h1>Home Page</h1>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <a class="brand" href="/index.html">Angel Polanco</a>
+        <ul class="nav">
+          <li><a href="/index.html" aria-current="page">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Hey! I'm Angel - Junior Web Developer</h1>
+          <p class="tagline">
+            Passionate about turning concept into code; bringing visions to life
+            on the web
+          </p>
+          <blockquote>
+            <p>“The harvest truly is plentiful, but the laborers are few."</p>
+            <cite>- Jesus Christ of Nazareth</cite>
+          </blockquote>
+        </div>
+        <figure class="hero-media">
+          <img src="/assets/portrait.jpg" alt="Portrait of Angel Polanco" />
+          <figcaption>Based in NYC | Full-Stack Solutions</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+
+    <script src="/home.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
