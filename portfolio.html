@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Portfolio - Angel Polanco</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <a class="brand" href="/index.html">Angel Polanco</a>
+        <ul class="nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header class="page-header">
+        <h1>Selected Work</h1>
+        <p>A few projects I’m proud of.</p>
+      </header>
+
+      <section class="projects" aria-label="Project gallery">
+        <article class="project-card">
+          <img src="/assets/portrait.jpg" alt="Screenshot of Project One" />
+          <div>
+            <h2>Project One</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              veniam libero sit quibusdam debitis cum qui tempore, modi
+              exercitationem ratione consequuntur dolorem quae, in voluptatem
+              officiis? Rerum optio dolorem distinctio.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="/assets/portrait.jpg" alt="Screenshot of Project Two" />
+          <div>
+            <h2>Project Two</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              veniam libero sit quibusdam debitis cum qui tempore, modi
+              exercitationem ratione consequuntur dolorem quae, in voluptatem
+              officiis? Rerum optio dolorem distinctio.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+
+    <script src="/home.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
