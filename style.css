@@ -93,6 +93,16 @@ main {
   padding-left: 1rem;
   border-left: 4px solid var(--brand);
   color: #cbd5e1;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+.quote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-style: normal;
+  color: var(--muted);
 }
 .hero-media {
   margin: 0;
@@ -108,23 +118,40 @@ main {
   border-radius: calc(var(--radius) - 4px);
 }
 
-.about {
-  display: grid;
-  gap: 1.25rem;
+.about-page h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-.about h1 {
-  margin-bottom: 0.25rem;
+.about-section {
+  margin: 2rem 0;
 }
-.about-photo {
+.about-section h2 {
+  margin-bottom: 0.75rem;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.about-content p {
+  flex: 2;
+}
+.about-content figure {
+  flex: 1;
   margin: 0;
-  max-width: 520px;
 }
-.about-photo img {
-  width: 100%;
-  border-radius: var(--radius);
-  border: 1px solid #1f2937;
+.about-content img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
 }
-
+hr {
+  border: 0;
+  border-top: 3px solid #444;
+  margin: 2rem 0;
+}
 .page-header {
   margin-bottom: 1.5rem;
 }

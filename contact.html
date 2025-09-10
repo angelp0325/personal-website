@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Contact — Angel Polanco</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <a class="brand" href="/index.html">Angel Polanco</a>
+        <ul class="nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header class="page-header">
+        <h1>Get in Touch</h1>
+        <p>Have a project or opportunity? Send me a note.</p>
+      </header>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <small
+        >© <span id="year"></span> Angel Polanco. All rights reserved.</small
+      >
+    </footer>
+
+    <script src="/home.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
